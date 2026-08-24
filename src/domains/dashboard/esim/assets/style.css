@@ -1,0 +1,264 @@
+.scale_on_hover {
+    transition: transform 0.5s;
+}
+.scale_on_hover:hover {
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.12);
+    transform: scale(1.02);
+}
+
+.custom-scrollbar {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 1px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 1px;
+}
+
+.esim-home-page {
+    --esim-accent: #f35b53;
+    --esim-accent-soft: #fff4f3;
+    --esim-border: #e9e9ef;
+    --esim-text-muted: #6d6d77;
+}
+
+.esim-breadcrumb {
+    font-size: 14px;
+}
+
+.esim-breadcrumb-active {
+    color: var(--esim-accent);
+}
+
+.esim-breadcrumb-separator,
+.esim-breadcrumb-current {
+    color: #8d8d98;
+}
+
+.esim-outline-action-btn {
+    height: 42px;
+    border-radius: 10px;
+    padding-inline: 18px;
+    border-color: #ff9f96;
+    color: var(--esim-accent);
+    box-shadow: none;
+}
+
+.esim-hero-image-wrap {
+    width: 100%;
+    max-width: 260px;
+}
+
+.esim-hero-image-wrap .ant-image,
+.esim-hero-image {
+    width: 100%;
+}
+
+@media (min-width: 1440px) {
+    .esim-hero-image-wrap {
+        max-width: 320px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .esim-hero-image-wrap {
+        max-width: 360px;
+    }
+}
+
+.esim-destination-label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #222;
+}
+
+.esim-destination-select .ant-select-selector {
+    min-height: 54px !important;
+    padding: 10px 14px !important;
+    border-radius: 14px !important;
+    border-color: var(--esim-border) !important;
+    box-shadow: none !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.esim-destination-select.ant-select-single {
+    height: 54px !important;
+}
+
+.esim-destination-select.ant-select-single .ant-select-selector {
+    padding: 0 14px !important;
+}
+
+.esim-destination-select.ant-select-focused .ant-select-selector,
+.esim-destination-select.ant-select-open .ant-select-selector {
+    border-color: #ffb4ae !important;
+}
+
+.esim-destination-select-icon,
+.esim-destination-select-icon .anticon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bfbfbf;
+}
+
+.esim-destination-select.ant-select-single .ant-select-arrow,
+.esim-destination-select.ant-select-single .ant-select-suffix {
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    transform: none !important;
+}
+
+.esim-destination-select.ant-select-single .ant-select-arrow .esim-destination-select-icon,
+.esim-destination-select.ant-select-single .ant-select-suffix .esim-destination-select-icon {
+    height: 100%;
+}
+
+.esim-country-collapse {
+    background: transparent;
+}
+
+.esim-country-collapse .ant-collapse-item {
+    margin-bottom: 12px;
+    border: 0 !important;
+    border-radius: 18px !important;
+    background: #fff;
+}
+
+.esim-country-collapse .ant-collapse-header {
+    align-items: center !important;
+    padding: 0 0 8px 0 !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: #171717 !important;
+}
+
+.esim-country-collapse .ant-collapse-expand-icon {
+    color: var(--esim-accent);
+}
+
+.esim-country-collapse .ant-collapse-content {
+    border-top: 0 !important;
+    background: transparent !important;
+}
+
+.esim-country-collapse .ant-collapse-content-box {
+    padding: 0 0 8px 0 !important;
+}
+
+.esim-country-plans-block {
+    padding: 8px 0 0 0;
+}
+
+.esim-travel-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-height: 88px;
+    padding: 16px;
+    border: 1px solid var(--esim-border);
+    border-radius: 14px;
+    background: #fff;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.esim-travel-card:hover {
+    border-color: #ffc2bc;
+}
+
+.esim-travel-card-active {
+    border-color: #ff9f96;
+    background: var(--esim-accent-soft);
+    box-shadow: 0 0 0 1px rgba(243, 91, 83, 0.05);
+}
+
+.esim-plan-card {
+    border: 1px solid var(--esim-border);
+    background: #fff;
+    box-shadow: none;
+}
+
+.esim-plan-card .ant-card-body {
+    padding: 16px 16px 14px;
+}
+
+.esim-plan-card-selected {
+    border-color: var(--esim-accent);
+    background: #fff9f8;
+}
+
+.esim-plan-card .ant-divider {
+    margin: 14px 0 12px;
+}
+
+.esim-order-summary-card {
+    border: 1px solid var(--esim-border);
+    box-shadow: none;
+}
+
+.esim-order-summary-card .ant-card-body {
+    padding: 20px;
+}
+
+.esim-buy-btn {
+    height: 46px;
+    border-radius: 12px;
+    background: var(--esim-accent);
+    box-shadow: none;
+}
+
+.esim-quantity-input {
+    max-width: 100%;
+}
+
+.esim-quantity-input .ant-input-number {
+    width: 100%;
+}
+
+.esim-quantity-input.ant-input-number {
+    width: 100%;
+    border-radius: 12px;
+    border-color: var(--esim-border);
+    box-shadow: none;
+}
+
+.esim-quantity-input.ant-input-number .ant-input-number-input {
+    height: 50px;
+}
+
+.esim-quantity-input.ant-input-number .ant-input-number-handler-wrap {
+    width: 36px;
+    background: #f5f5f7;
+    border-inline-start: 1px solid #e5e7eb;
+    opacity: 1;
+}
+
+.esim-quantity-input.ant-input-number .ant-input-number-handler {
+    border-block-end-color: #e5e7eb;
+    color: #9ca3af;
+}
+
+.esim-quantity-input.ant-input-number .ant-input-number-handler:hover {
+    background: #eeeeF2;
+    color: #6b7280;
+}
+
+.esim-quantity-input.ant-input-number .ant-input-number-handler-up-inner,
+.esim-quantity-input.ant-input-number .ant-input-number-handler-down-inner {
+    color: inherit;
+}

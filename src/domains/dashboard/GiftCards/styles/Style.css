@@ -1,0 +1,51 @@
+/* Scrollbar Styles */
+#scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #d9d9d9 transparent;
+    overflow-x: auto;
+  }
+
+  #scrollbar::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+  }
+
+  #scrollbar::-webkit-scrollbar-thumb {
+    background-color: #d9d9d9;
+    border-radius: 999px;
+  }
+
+  #scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  #scrollbar::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  .input-container {
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    border-radius: 0;
+    color: rgba(204, 204, 204, 1);
+  }
+
+  .gift-card-html-content ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+  }
+
+  .gift-card-html-content ol {
+    list-style-type: decimal;
+    padding-left: 1.25rem;
+  }
+
+  .gift-card-html-content li {
+    margin-bottom: 0.25rem;
+  }
+
+  .gift-card-html-content a,
+  .gift-card-html-content a span,
+  .gift-card-html-content span[style*="color"] {
+    color: inherit !important;
+  }
