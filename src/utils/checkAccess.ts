@@ -1,4 +1,5 @@
 import { UserRole } from '@customtypes/general';
+import { AUTH_DISABLED } from '@src/config/authBypass';
 import { paths } from '@src/routes/paths';
 import { RootState, store } from '@store/store';
 
@@ -26,6 +27,12 @@ export function checkMoreServicesSidebar() {
 }
 
 export function checkCorporateSidebar(key: string) {
+    // LOGIN DISABLED: without a real login, `services` never populates, so every
+    // sidebar item (not just Corporate Travel) would otherwise be filtered out below.
+    // Flip `AUTH_DISABLED` in `@src/config/authBypass` to `false` to restore the
+    // real per-service access check.
+    if (AUTH_DISABLED) return true;
+
     const { services } = (store.getState() as RootState).reducer.services;
 
     const hasAccess = services?.data?.find(
