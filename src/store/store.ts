@@ -27,6 +27,7 @@ import eInvoiceAuthReducer from '@domains/dashboard/invoiceV2/slices/eInvoiceAut
 import eInvoiceIrnReducer from '@domains/dashboard/invoiceV2/slices/eInvoiceIrnSlice';
 import logisticsReducer from '@domains/dashboard/logistics/slice/logisticsSlice';
 import logisticsV3Reducer from '@domains/dashboard/logisticsNew/slice/logisticsSlice';
+import metroReducer from '@domains/dashboard/Metro/slices/metroSlice';
 import supportReducer from '@domains/dashboard/needHelp/slices/supportSlice';
 import planReducer from '@domains/dashboard/OfficeAddress/slices';
 import cartReducer from '@domains/dashboard/officeSupplies/slices/cartSlice';
@@ -149,6 +150,7 @@ const persistConfig = {
         'vendorDraft',
         'corporateCards',
         'busTicket',
+        'metro',
     ],
 };
 
@@ -221,6 +223,7 @@ const rootReducer = combineReducers({
     billPayments: billPaymentReducer,
     challan: challanReducer,
     busTicket: busTicketReducer,
+    metro: metroReducer,
     vehicleReport: vehicleReportReducer,
     verificationSuite: verificationSuiteReducer,
     governmentServices: governmentServicesReducer,

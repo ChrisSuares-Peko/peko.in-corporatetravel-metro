@@ -9,6 +9,7 @@ import AirlineSm from '../assets/icons/airplane.png';
 import BusSm from '../assets/icons/bus.png';
 import TravelESimSm from '../assets/icons/eSim.webp';
 import hotelsSm from '../assets/icons/hotel.png';
+import MetroSm from '../assets/icons/metro.svg';
 import VisaSm from '../assets/icons/visa.png';
 
 type Props = {
@@ -90,7 +91,20 @@ const CorporateTravelCard = ({ handleChange, selectedType }: Props) => {
                     Visa
                 </Typography.Text>
             </Flex>
-          
+            <Flex
+                vertical
+                className={`rounded-2xl cursor-pointer transition-all duration-300 hover:bg-gray-50 ${selectedType === '6' ? 'bg-red-50/50' : 'bg-white'} py-3 px-4 gap-2 min-w-[100px] shadow-[0_4px_20px_0px_rgba(0,0,0,0.08)] border border-gray-100`}
+                justify="center"
+                align="center"
+                onClick={() => handleChange('6')}
+            >
+                <img src={MetroSm} alt="Metro" className="w-10 h-10 object-contain" />
+                <Typography.Text
+                    className={`text-xs text-center font-medium ${selectedType === '6' ? 'text-brandColor' : 'text-gray-600'}`}
+                >
+                    Metro
+                </Typography.Text>
+            </Flex>
         </Flex>
     );
 };

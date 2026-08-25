@@ -327,6 +327,14 @@ export const paths = {
         manageBookings: 'manage-bookings',
         bookingConfirmed: 'booking-confirmed',
     },
+    metro: {
+        index: 'metro',
+        results: 'ticket-summary',
+        confirmation: 'ticket-confirmation',
+        smartCard: 'smart-card',
+        smartCardRecharge: 'recharge',
+        smartCardConfirmation: 'recharge-confirmation',
+    },
     airline: {
         index: 'airline',
         results: 'flight-details',

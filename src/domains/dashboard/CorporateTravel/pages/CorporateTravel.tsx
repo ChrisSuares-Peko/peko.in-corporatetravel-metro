@@ -15,6 +15,7 @@ import SearchFlight from '../../Airline/components/SearchFlight';
 import SearchFlightMobile from '../../Airline/components/SearchFlightMobile';
 import SearchBus from '../../BusTickets/components/landingPage/SearchBus';
 import Redirect from '../../esim/components/home/Redirect';
+import SearchMetro from '../../Metro/components/landingPage/SearchMetro';
 import CorporateTravelCardSm from '../components/CorporateTravelCard';
 import SearchVisa from '../components/SearchVisa';
 
@@ -70,6 +71,8 @@ const CorporateTravel = () => {
                 return <SearchVisa />;   
             case '5':
                 return <SearchBus />;
+            case '6':
+                return <SearchMetro />;
             default:
                 return '';
         }

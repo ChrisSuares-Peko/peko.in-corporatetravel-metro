@@ -4,6 +4,7 @@ import { airlineRoutes } from './airline';
 import { busRoutes } from './bus';
 import { esimRoutes } from './esim';
 import { hotelsRoutes } from './hotels';
+import { metroRoutes } from './metro';
 import { visaRoutes } from './visa';
 import { paths } from '../paths';
 
@@ -35,5 +36,9 @@ export const corporateTravelRoutes = [
     {
         path: paths.bus.index,
         children: busRoutes,
+    },
+    {
+        path: paths.metro.index,
+        children: metroRoutes,
     },
 ];

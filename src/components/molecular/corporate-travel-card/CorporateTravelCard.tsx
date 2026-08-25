@@ -7,6 +7,7 @@ import FlightIcon from './assets/icons/airplane.png';
 import BusIcon from './assets/icons/bus.png';
 import EsimIcon from './assets/icons/eSim.webp';
 import HotelIcon from './assets/icons/hotel.png';
+import MetroIcon from './assets/icons/metro.svg';
 import VisaIcon from './assets/icons/visa.png';
 
 import './assets/style.css';
@@ -34,6 +35,7 @@ const CorporateTravelCard = ({ selectedType, handleChange }: Props) => {
             onClick: () => navigate(paths.esim.index),
         },
         { key: '4', label: 'Visa', icon: VisaIcon, onClick: () => handleChange('4') },
+        { key: '6', label: 'Metro', icon: MetroIcon, onClick: () => handleChange('6') },
     ];
 
     return (
